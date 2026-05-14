@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>郭子豪 — 个人学术主页</title>
+    <meta name="description" content="郭子豪（Zihao Guo）个人学术主页，江南大学人工智能与计算机学院本科生。研究方向：AI for Science、生物信息学、大语言模型推理、多模态学习。" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<div class="wrapper">
+
+    <aside class="sidebar">
+        <img class="avatar" src="https://ui-avatars.com/api/?name=Zihao+Guo&background=4600af&color=fff&size=340&font-size=0.4&bold=true" alt="郭子豪" />
+        <div class="name">郭子豪</div>
+        <div class="name-cn">Zihao Guo</div>
+
+        <p class="affiliation">
+            <strong>江南大学</strong><br />
+            人工智能与计算机学院<br />
+            数字媒体技术 · 本科<br />
+            <span style="color:var(--muted); font-size:0.85rem;">2023 级 · 大三在读</span>
+        </p>
+
+        <div class="interests">
+            <b>研究兴趣</b><br />
+            AI for Science（生物信息学）·
+            大语言模型推理与 Agent ·
+            多模态学习 ·
+            医学图像分析
+        </div>
+
+        <div class="social-icons">
+            <a href="mailto:1191230418@jiangnan.edu.cn" title="邮箱"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/unumbrela" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+            <a href="https://scholar.google.com/" title="Google Scholar" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i></a>
+            <a href="https://orcid.org/" title="ORCID" target="_blank" rel="noopener"><i class="fab fa-orcid"></i></a>
+            <a href="#contact" title="联系"><i class="fas fa-address-card"></i></a>
+        </div>
+
+        <div class="lang-switch">
+            <a href="index.html">EN</a>
+            <a href="index_cn.html" class="active">中文</a>
+        </div>
+    </aside>
+
+    <main class="content">
+
+        <nav class="topnav">
+            <a href="#about">关于</a>
+            <a href="#news">动态</a>
+            <a href="#publications">论文</a>
+            <a href="#projects">项目</a>
+            <a href="#contact">联系</a>
+        </nav>
+
+        <!-- Hero carousel -->
+        <div class="hero-carousel" id="hero">
+            <div class="hero-slide active">
+                <div class="hero-inner">
+                    <span class="badge-tier">ICIC 2026 · Oral · 已录用</span>
+                    <h2>FWMamba-UNet<br />面向医学图像分割的频域-小波增强 Mamba UNet</h2>
+                    <div class="meta"><i class="fa fa-calendar-alt"></i> 2026 &nbsp;·&nbsp; <i class="fa fa-folder"></i> 医学图像 · 第一作者</div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-inner">
+                    <span class="badge-tier">NeurIPS 2026 · CCF-A · 投稿中</span>
+                    <h2>Tokenization is Mechanism<br />面向生物序列的信息非对称 Token Merging</h2>
+                    <div class="meta"><i class="fa fa-calendar-alt"></i> 2026 &nbsp;·&nbsp; <i class="fa fa-folder"></i> AI4Science · 第一作者</div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-inner">
+                    <span class="badge-tier">ICIC 2026 · Oral · 已录用</span>
+                    <h2>ProtoGene<br />基于生物先验原型微调的单细胞基础模型 RT-Gap 桥接</h2>
+                    <div class="meta"><i class="fa fa-calendar-alt"></i> 2026 &nbsp;·&nbsp; <i class="fa fa-folder"></i> 单细胞 · 第一作者</div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-inner">
+                    <span class="badge-tier">iGEM 2025 · 国际金奖 · 巴黎答辩</span>
+                    <h2>AMP Forge<br />通用型抗菌肽从头设计与可控生成平台</h2>
+                    <div class="meta"><i class="fa fa-calendar-alt"></i> 2025 &nbsp;·&nbsp; <i class="fa fa-folder"></i> 干实验负责人</div>
+                </div>
+            </div>
+            <div class="carousel-dots">
+                <button class="active" aria-label="Slide 1"></button>
+                <button aria-label="Slide 2"></button>
+                <button aria-label="Slide 3"></button>
+                <button aria-label="Slide 4"></button>
+            </div>
+        </div>
+
+        <!-- About -->
+        <section class="block" id="about">
+            <h2>🎓 关于我</h2>
+            <div class="callout">
+                <p style="margin:0;">
+                    我是<strong>江南大学</strong>（211 工程·双一流）人工智能与计算机学院数字媒体技术专业本科生，
+                    研究方向聚焦 <strong>AI for Science</strong>——尤其是
+                    <em>生物序列建模</em>、<em>单细胞基础模型</em>、<em>蛋白/多肽设计</em> 与
+                    <em>大语言模型推理</em>。
+                </p>
+                <p style="margin:10px 0 0;">
+                    迄今投稿 <strong>七篇</strong> 学术论文（六篇一作 / 共一，五作一篇；六篇已录用），
+                    覆盖 <em>NeurIPS</em>、<em>ICML</em>、<em>PRCV</em>、<em>ICIC</em> 等会议；
+                    申请 <strong>发明专利一项</strong>；
+                    带队斩获 <strong>iGEM 2025 国际金奖</strong>（干实验负责人，巴黎线下答辩）。
+                </p>
+                <p style="margin:10px 0 0;">
+                    <strong>欢迎科研合作与机会推荐</strong>（科研助理 / 暑期实习 / 研究生申请），尤其是
+                    AI for 生命科学方向。
+                </p>
+            </div>
+
+            <h2 style="margin-top:42px;">🌟 研究理念</h2>
+            <p style="text-align:justify; font-size:1.05rem;">
+                生命以序列书写，而 AI 正在学习倾听。我的研究由两条互补的主线驱动：
+            </p>
+            <ul style="font-size:1.05rem;">
+                <li><strong>读懂生物序列。</strong>
+                    以信息论与可解释性视角，设计面向蛋白质、多肽、单细胞转录组及更广生物语言的基础模型。</li>
+                <li><strong>面向科学的推理机器。</strong>
+                    以大语言模型 Agent 为核心，融合符号推理与深度表示学习，解决具体的科学设计问题。</li>
+            </ul>
+            <p class="quote">
+                "我们必须知道，我们必将知道。"
+                <span class="author">— 大卫·希尔伯特</span>
+            </p>
+        </section>
+
+        <!-- News -->
+        <section class="block" id="news">
+            <h2>📰 近期动态</h2>
+            <ul class="news-list">
+                <li>
+                    <span class="date">2026</span>
+                    <span><strong>RA-Det</strong>（五作）被 <strong>ICML 2026</strong>（CCF-A 国际顶会）接收。<span class="new-tag">NEW</span></span>
+                </li>
+                <li>
+                    <span class="date">2026</span>
+                    <span><strong>Tokenization is Mechanism</strong> 投稿 <strong>NeurIPS 2026</strong>（CCF-A），第一作者。</span>
+                </li>
+                <li>
+                    <span class="date">2026</span>
+                    <span>四篇一作论文同获 <strong>ICIC 2026 Oral</strong>：ProtoGene、Extract-Then-Compile、Alignment-Adaptive Fusion、FWMamba-UNet。</span>
+                </li>
+                <li>
+                    <span class="date">2025-11</span>
+                    <span><strong>iGEM 2025 国际金奖</strong>，巴黎线下答辩，担任干实验负责人。</span>
+                </li>
+                <li>
+                    <span class="date">2025</span>
+                    <span><strong>MambaGuard</strong>（共一）被 <strong>PRCV 2025</strong>（CCF-C）接收。</span>
+                </li>
+                <li>
+                    <span class="date">2025</span>
+                    <span>申请发明专利《一种基于神经符号融合的语言驱动旅行规划方法及装置》。</span>
+                </li>
+                <li>
+                    <span class="date">2025</span>
+                    <span>获 <strong>无锡市优秀学生干部</strong> 称号。</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Education -->
+        <section class="block" id="education">
+            <h2>🏫 教育经历</h2>
+            <div class="callout">
+                <h3 style="margin:0;">江南大学 &nbsp;<span style="font-size:0.8rem; color:var(--muted); font-weight:400;">（211 工程 · 双一流）</span></h3>
+                <p style="margin:6px 0 0;">人工智能与计算机学院 · 数字媒体技术 · 本科</p>
+                <p style="margin:6px 0 0; color:var(--muted); font-size:0.9rem;">2023.09 — 2027.06 &nbsp;|&nbsp; 绩点 <strong>88 / 100</strong></p>
+                <p style="margin:10px 0 0;">
+                    校级荣誉：<em>江南大学荣誉至善生</em>、<em>一等综合奖学金</em>、<em>校级优秀学生干部</em>；
+                    市级荣誉：<em>无锡市优秀学生干部</em>。
+                </p>
+            </div>
+        </section>
+
+        <!-- Publications -->
+        <section class="block" id="publications">
+            <h2>📄 学术论文</h2>
+            <p style="text-align:center; color:var(--muted); margin-top:-14px; margin-bottom:24px;">
+                <sup>1</sup> 表示第一作者 · * 表示共同第一作者
+            </p>
+
+            <div class="pub-item">
+                <div class="pub-num">1</div>
+                <div>
+                    <div class="pub-title">Tokenization is Mechanism: Information-Asymmetric Token Merging for Biological Sequences</div>
+                    <div class="pub-authors"><span class="me">Zihao Guo<sup>1</sup></span>, et al.</div>
+                    <div class="pub-meta">
+                        <span class="tag tag-a">NeurIPS 2026 · CCF-A</span>
+                        <span class="tag tag-status-submit">投稿中</span>
+                        <span class="tag tag-role">第一作者</span>
+                    </div>
+                    <p style="margin:6px 0 0; font-size:0.9rem; color:#444;">
+                        肽段-MHC 结合预测 · 信息论 Token Merging · 可解释机制 ·
+                        跨域生物序列建模（pMHC / TCR / DNA / SMILES）。
+                    </p>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-num">2</div>
+                <div>
+                    <div class="pub-title">ProtoGene: Bridging the RT-Gap in Single-Cell Foundation Models via Biology-Aware Prototypical Fine-Tuning</div>
+                    <div class="pub-authors"><span class="me">Zihao Guo<sup>1</sup></span>, et al.</div>
+                    <div class="pub-meta">
+                        <span class="tag tag-c">ICIC 2026 · CCF-C · Oral</span>
+                        <span class="tag tag-status-accept">已录用</span>
+                        <span class="tag tag-role">第一作者</span>
+                    </div>
+                    <p style="margin:6px 0 0; font-size:0.9rem; color:#444;">
+                        单细胞基础模型 · 基因预训练模型微调 · 原型对比学习 · 模型泛化性。
+                    </p>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-num">3</div>
+                <div>
+                    <div class="pub-title">Extract Then Compile: Reliable Neuro-Symbolic Planning for Large Language Models</div>
+                    <div class="pub-authors"><span class="me">Zihao Guo<sup>1</sup></span>, et al.</div>
+                    <div class="pub-meta">
+                        <span class="tag tag-c">ICIC 2026 · CCF-C · Oral</span>
+                        <span class="tag tag-status-accept">已录用</span>
+                        <span class="tag tag-role">第一作者</span>
+                    </div>
+                    <p style="margin:6px 0 0; font-size:0.9rem; color:#444;">
+                        大语言模型 · Agent · 神经符号方法 · 约束满足规划求解。
+                    </p>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-num">4</div>
+                <div>
+                    <div class="pub-title">Fusion Direction Matters: Alignment-Adaptive Cross-Modal Fusion for Medical Image Segmentation</div>
+                    <div class="pub-authors"><span class="me">Zihao Guo<sup>1</sup></span>, et al.</div>
+                    <div class="pub-meta">
+                        <span class="tag tag-c">ICIC 2026 · CCF-C · Oral</span>
+                        <span class="tag tag-status-accept">已录用</span>
+                        <span class="tag tag-role">第一作者</span>
+                    </div>
+                    <p style="margin:6px 0 0; font-size:0.9rem; color:#444;">
+                        计算机视觉 · 医学图像分割 · 视觉-语言模型 · 多模态融合。
+                    </p>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-num">5</div>
+                <div>
+                    <div class="pub-title">FWMamba-UNet: Frequency-Wavelet Enhanced Mamba UNet for Medical Image Segmentation</div>
+                    <div class="pub-authors"><span class="me">Zihao Guo<sup>1</sup></span>, et al.</div>
+                    <div class="pub-meta">
+                        <span class="tag tag-c">ICIC 2026 · CCF-C · Oral</span>
+                        <span class="tag tag-status-accept">已录用</span>
+                        <span class="tag tag-role">第一作者</span>
+                    </div>
+                    <p style="margin:6px 0 0; font-size:0.9rem; color:#444;">
+                        计算机视觉 · 医学图像分割 · Mamba 状态空间模型 · 小波变换。
+                    </p>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-num">6</div>
+                <div>
+                    <div class="pub-title">MambaGuard: A CLIP-Mamba Approach for OOD Generated Image Detection</div>
+                    <div class="pub-authors">Xinchang Wang*, Yuechen Zhang*, <span class="me">Zihao Guo*</span>, et al.</div>
+                    <div class="pub-meta">
+                        <span class="tag tag-c">PRCV 2025 · CCF-C</span>
+                        <span class="tag tag-status-accept">已录用</span>
+                        <span class="tag tag-role">共同一作</span>
+                    </div>
+                    <p style="margin:6px 0 0; font-size:0.9rem; color:#444;">
+                        生成图像检测 · 视觉-语言模型 · Mamba。
+                    </p>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-num">7</div>
+                <div>
+                    <div class="pub-title">RA-Det: Towards Universal Detection of AI-Generated Images via Robustness Asymmetry</div>
+                    <div class="pub-authors">Xinchang Wang, Yunhao Chen, Yuechen Zhang, Congcong Bian, <span class="me">Zihao Guo</span>, et al.</div>
+                    <div class="pub-meta">
+                        <span class="tag tag-a">ICML 2026 · CCF-A</span>
+                        <span class="tag tag-status-accept">已录用</span>
+                        <span class="tag tag-role">第五作者</span>
+                    </div>
+                    <p style="margin:6px 0 0; font-size:0.9rem; color:#444;">
+                        基于鲁棒性非对称的通用 AI 生成图像检测。
+                    </p>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-num"><i class="fas fa-file-contract"></i></div>
+                <div>
+                    <div class="pub-title">发明专利 — 一种基于神经符号融合的语言驱动旅行规划方法及装置</div>
+                    <div class="pub-authors">中国发明专利（申请中）</div>
+                    <div class="pub-meta">
+                        <span class="tag tag-status-submit">已申请</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="block" id="projects">
+            <h2>🧪 重点项目</h2>
+            <div class="proj-grid">
+
+                <div class="proj-card">
+                    <div class="role">第一作者 · ICIC 2026 Oral</div>
+                    <h3>FWMamba-UNet — 频域-小波增强 Mamba UNet</h3>
+                    <p>
+                        面向医学图像分割的网络，在 Mamba 状态空间主干上引入 <strong>频域</strong> 与
+                        <strong>小波变换</strong> 双分支。频域-小波增强可捕获纯空间域 UNet 难以建模的跨尺度边界信息，
+                        在多器官、病理等数据集上获得稳定的 Dice / HD<sub>95</sub> 提升，且保持 Mamba 的线性复杂度优势。
+                    </p>
+                    <div class="stack">
+                        <span>Mamba / SSM</span><span>小波变换</span><span>FFT</span><span>UNet</span>
+                        <span>医学图像</span><span>PyTorch</span>
+                    </div>
+                </div>
+
+                <div class="proj-card">
+                    <div class="role">iGEM 2025 · 国际金奖 · 干实验负责人</div>
+                    <h3>AMP Forge — 抗菌肽从头设计平台</h3>
+                    <p>
+                        团队以唯一人源抗菌肽 <strong>LL-37</strong> 为切入点，利用酿酒酵母构建细胞工厂以缓解抗生素耐药性。
+                        作为干实验负责人，搭建通用型抗菌肽从头设计与可控生成平台：构建最大规模 AMP 语料数据库，
+                        设计 <strong>ESM-2 / ProtT5 / Ankh + BiGRU-VAE 隐空间 + Latent Diffusion + Transformer 解码</strong>
+                        三阶段训练流程（MLE → RL 对抗 → 扩散精调），支持六种生成方式，多项指标达 <strong>SOTA</strong>；
+                        多条变体经湿实验验证，抑菌活性优于原始序列。
+                    </p>
+                    <div class="stack">
+                        <span>PyTorch</span><span>ESM-2</span><span>ProtT5</span><span>Ankh</span>
+                        <span>Latent Diffusion</span><span>BiGRU-VAE</span><span>RLHF</span>
+                    </div>
+                </div>
+
+                <div class="proj-card">
+                    <div class="role">第一作者 · ICIC 2026 Oral</div>
+                    <h3>ProtoGene — 单细胞基础模型微调</h3>
+                    <p>
+                        提出生物先验原型微调框架，弥合不同 scRNA-seq 测序协议之间的 <em>read-technology gap</em>，
+                        提升单细胞基础模型在未见数据集上的泛化能力。
+                    </p>
+                    <div class="stack">
+                        <span>scGPT</span><span>Geneformer</span><span>对比学习</span><span>PyTorch</span>
+                    </div>
+                </div>
+
+                <div class="proj-card">
+                    <div class="role">第一作者 · NeurIPS 2026 投稿</div>
+                    <h3>Tokenization-as-Mechanism</h3>
+                    <p>
+                        信息非对称的 Token Merging：将分词器本身作为可解释机制，应用于
+                        <strong>pMHC、TCR、DNA、SMILES</strong> 多种生物序列，跨域均取得稳定提升，
+                        且可视化合并树具有清晰的生物学含义。
+                    </p>
+                    <div class="stack">
+                        <span>信息论</span><span>pMHC</span><span>TCR</span><span>DNA</span><span>SMILES</span>
+                    </div>
+                </div>
+
+                <div class="proj-card">
+                    <div class="role">第一作者 · ICIC 2026 Oral</div>
+                    <h3>SHINE — 神经符号旅行规划 Agent</h3>
+                    <p>
+                        Extract-Then-Compile 框架：大模型先将自然语言约束抽取为符号程序，再交由经典求解器可靠求解。
+                        在 ChinaTravel 基准上取得领先 pass-rate，已申请国家发明专利。
+                    </p>
+                    <div class="stack">
+                        <span>LLM Agent</span><span>神经符号</span><span>约束求解</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="block" id="contact">
+            <h2>📬 联系我</h2>
+            <div style="text-align:center;">
+                <p><i class="fas fa-envelope" style="color:var(--primary)"></i> &nbsp;
+                    <a href="mailto:1191230418@jiangnan.edu.cn">1191230418@jiangnan.edu.cn</a>
+                </p>
+                <p><i class="fas fa-phone" style="color:var(--primary)"></i> &nbsp; +86 176-1462-8870</p>
+                <p><i class="fas fa-map-marker-alt" style="color:var(--primary)"></i> &nbsp; 江苏 无锡</p>
+                <p style="margin-top:18px;">
+                    <a href="https://github.com/unumbrela" target="_blank" rel="noopener"><span style="display:inline-flex; padding:8px 16px; border:1px solid var(--border); border-radius:20px; gap:6px; align-items:center;"><i class="fab fa-github"></i> github.com/unumbrela</span></a>
+                </p>
+                <p class="quote" style="margin-top:30px;">
+                    欢迎科研合作、实习机会、研究生申请等方面的交流（尤其是 AI for 生命科学方向）。
+                </p>
+            </div>
+        </section>
+
+        <div class="footer">
+            &copy; <span id="year">2026</span> <a href="#hero">郭子豪 Zihao Guo</a> · 用心制作 · 最近更新 2026 年 5 月
+        </div>
+
+    </main>
+</div>
+
+<a href="#hero" class="back-top" id="backTop" aria-label="返回顶部"><i class="fas fa-angle-double-up"></i></a>
+
+<script>
+    (function() {
+        const slides = document.querySelectorAll('.hero-slide');
+        const dots = document.querySelectorAll('.carousel-dots button');
+        let idx = 0;
+        const total = slides.length;
+        function show(i) {
+            slides.forEach((s, k) => s.classList.toggle('active', k === i));
+            dots.forEach((d, k) => d.classList.toggle('active', k === i));
+            idx = i;
+        }
+        dots.forEach((d, k) => d.addEventListener('click', () => show(k)));
+        setInterval(() => show((idx + 1) % total), 5500);
+    })();
+
+    const bt = document.getElementById('backTop');
+    window.addEventListener('scroll', () => {
+        bt.classList.toggle('visible', window.scrollY > 320);
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

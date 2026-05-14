@@ -1,288 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zihao - AI Researcher</title>
-  <meta name="description" content="Zihao's Academic Homepage - AI Researcher at Jiangnan University">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zihao Guo — Academic Homepage</title>
+    <meta name="description" content="Personal academic homepage of Zihao Guo (郭子豪), undergraduate researcher at Jiangnan University. Research in AI for Science, LLM reasoning, multimodal learning, and computational biology." />
+    <meta name="keywords" content="Zihao Guo, 郭子豪, Jiangnan University, AI for Science, Bioinformatics, LLM, Multimodal Learning, iGEM, NeurIPS, ICIC, PRCV, ICML" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <!-- Language Toggle -->
-  <button class="lang-toggle" id="langToggle" onclick="toggleLang()" title="Switch Language">
-    <span id="langLabel">CN</span>
-  </button>
 
-  <!-- Navigation -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#" class="nav-logo">Zihao</a>
-      <div class="nav-links">
-        <a href="#about" data-en="About" data-cn="关于">About</a>
-        <a href="#publications" data-en="Publications" data-cn="论文">Publications</a>
-        <a href="#projects" data-en="Projects" data-cn="项目">Projects</a>
-        <a href="#awards" data-en="Awards" data-cn="荣誉">Awards</a>
-        <a href="#contact" data-en="Contact" data-cn="联系">Contact</a>
-      </div>
-      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+<div class="wrapper">
 
-  <!-- Hero Section -->
-  <header class="hero" id="about">
-    <div class="hero-container">
-      <div class="hero-text">
-        <p class="hero-greeting" data-en="Hello, I'm" data-cn="你好，我是">Hello, I'm</p>
-        <h1 class="hero-name">Zihao</h1>
-        <p class="hero-title" data-en="AI Researcher · Jiangnan University" data-cn="AI 研究者 · 江南大学">AI Researcher · Jiangnan University</p>
-        <p class="hero-desc" data-en="Undergraduate researcher in AI & Computer Science (Class of 2027). Focused on Multimodal Learning, AI Safety, LLM Reasoning, and AI for Science. 4 papers as first/co-first author (1 CCF-B, 3 CCF-C). iGEM 2025 Gold Medalist." data-cn="人工智能与计算机学院 2023 级本科生（预计 2027 年毕业）。研究方向涵盖多模态学习、AI 安全、大语言模型推理与 AI for Science。以第一/共一作者发表及投稿论文 4 篇（CCF-B 类 1 篇、CCF-C 类 3 篇）。2025 iGEM 金牌获得者。">
-          Undergraduate researcher in AI & Computer Science (Class of 2027). Focused on Multimodal Learning, AI Safety, LLM Reasoning, and AI for Science. 4 papers as first/co-first author (1 CCF-B, 3 CCF-C). iGEM 2025 Gold Medalist.
+    <!-- ============ Sidebar ============ -->
+    <aside class="sidebar">
+        <img class="avatar" src="https://ui-avatars.com/api/?name=Zihao+Guo&background=4600af&color=fff&size=340&font-size=0.4&bold=true" alt="Zihao Guo" />
+        <div class="name">Zihao Guo</div>
+        <div class="name-cn">郭子豪</div>
+
+        <p class="affiliation">
+            <strong>Jiangnan University</strong><br />
+            School of AI &amp; Computer Science<br />
+            B.Eng. in Digital Media Technology<br />
+            <span style="color:var(--muted); font-size:0.85rem;">Class of 2027 · Junior</span>
         </p>
-        <div class="hero-tags">
-          <span class="tag">Multimodal Learning</span>
-          <span class="tag">Deepfake Detection</span>
-          <span class="tag">LLM Reasoning</span>
-          <span class="tag">AI4Science</span>
-          <span class="tag">Protein Design</span>
-        </div>
-        <div class="hero-links">
-          <a href="mailto:zihao3351@gmail.com" class="btn btn-primary" data-en="Email Me" data-cn="邮件联系">Email Me</a>
-          <a href="https://github.com/unumbrela" class="btn btn-outline">GitHub</a>
-          <a href="https://scholar.google.com/" class="btn btn-outline">Google Scholar</a>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <div class="hero-card">
-          <div class="card-header">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-          </div>
-          <pre class="card-code"><code><span class="kw">class</span> <span class="cls">Researcher</span>:
-  <span class="attr">name</span> = <span class="str">"Zihao"</span>
-  <span class="attr">affiliation</span> = <span class="str">"Jiangnan Univ."</span>
-  <span class="attr">interests</span> = [
-    <span class="str">"Multimodal Learning"</span>,
-    <span class="str">"AI Safety"</span>,
-    <span class="str">"LLM Reasoning"</span>,
-    <span class="str">"AI4Science"</span>,
-  ]
-  <span class="attr">papers</span> = <span class="num">4</span>  <span class="cmt"># CCF-B x1, CCF-C x3</span>
-  <span class="attr">awards</span> = [<span class="str">"iGEM Gold"</span>]</code></pre>
-        </div>
-      </div>
-    </div>
-  </header>
 
-  <!-- Publications -->
-  <section class="section" id="publications">
-    <div class="container">
-      <h2 class="section-title" data-en="Publications" data-cn="学术论文">Publications</h2>
-      <div class="pub-list">
+        <div class="interests">
+            <b>Research Interests</b><br />
+            AI for Science (Bioinformatics) ·
+            LLM Reasoning &amp; Agent ·
+            Multimodal Learning ·
+            Medical Image Analysis
+        </div>
 
-        <div class="pub-item">
-          <div class="pub-venue accepted">PRCV 2026</div>
-          <div class="pub-content">
-            <h3 class="pub-title">MambaGuard: A CLIP-Mamba Approach for OOD Generated Image Detection</h3>
-            <p class="pub-authors"><strong>Zihao (Co-first Author)</strong></p>
-            <p class="pub-desc" data-en="First exploration of State Space Model (Mamba) architecture for generated image detection. Designed CLIP-Mamba based multimodal feature decoupling fusion network for robust OOD deepfake detection." data-cn="首次探索 State Space Model（Mamba）架构在生成图像检测中的有效性。设计基于 CLIP-Mamba 的多模态特征解耦融合网络，实现鲁棒的 OOD Deepfake 检测。">
-              First exploration of State Space Model (Mamba) architecture for generated image detection. Designed CLIP-Mamba based multimodal feature decoupling fusion network for robust OOD deepfake detection.
-            </p>
-            <div class="pub-tags">
-              <span class="badge badge-green" data-en="Accepted" data-cn="已录用">Accepted</span>
-              <span class="badge">CCF-C</span>
-              <span class="badge">Mamba</span>
-              <span class="badge">CLIP</span>
-              <span class="badge">Deepfake</span>
+        <div class="social-icons">
+            <a href="mailto:1191230418@jiangnan.edu.cn" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/unumbrela" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+            <a href="https://scholar.google.com/" title="Google Scholar" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i></a>
+            <a href="https://orcid.org/" title="ORCID" target="_blank" rel="noopener"><i class="fab fa-orcid"></i></a>
+            <a href="#contact" title="Contact"><i class="fas fa-address-card"></i></a>
+        </div>
+
+        <div class="lang-switch">
+            <a href="index.html" class="active">EN</a>
+            <a href="index_cn.html">中文</a>
+        </div>
+    </aside>
+
+    <!-- ============ Main content ============ -->
+    <main class="content">
+
+        <nav class="topnav">
+            <a href="#about">About</a>
+            <a href="#news">News</a>
+            <a href="#publications">Publications</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Hero carousel -->
+        <div class="hero-carousel" id="hero">
+            <div class="hero-slide active">
+                <div class="hero-inner">
+                    <span class="badge-tier">ICIC 2026 · Oral · Accepted</span>
+                    <h2>FWMamba-UNet<br />Frequency-Wavelet Enhanced Mamba UNet<br />for Medical Image Segmentation</h2>
+                    <div class="meta"><i class="fa fa-calendar-alt"></i> 2026 &nbsp;·&nbsp; <i class="fa fa-folder"></i> Medical Imaging · First Author</div>
+                </div>
             </div>
-          </div>
-        </div>
-
-        <div class="pub-item">
-          <div class="pub-venue review">ICAPS 2026</div>
-          <div class="pub-content">
-            <h3 class="pub-title">SHINE: A Neuro-Symbolic Approach to Language-Driven Travel Planning</h3>
-            <p class="pub-authors"><strong>Zihao (First Author)</strong></p>
-            <p class="pub-desc" data-en="Proposed SHINE neuro-symbolic hybrid architecture combining LLM understanding with symbolic reasoning for multi-constraint optimization. Achieved 77.27% pass rate on ChinaTravel benchmark (>100% improvement over baselines)." data-cn="提出 SHINE 神经-符号混合架构，将 LLM 理解能力与符号推理精确约束验证相结合。在 ChinaTravel 基准上实现 77.27% 通过率（相比基线提升超 100%）。">
-              Proposed SHINE neuro-symbolic hybrid architecture combining LLM understanding with symbolic reasoning for multi-constraint optimization. Achieved 77.27% pass rate on ChinaTravel benchmark (>100% improvement over baselines).
-            </p>
-            <div class="pub-tags">
-              <span class="badge badge-yellow" data-en="Under Review" data-cn="在投">Under Review</span>
-              <span class="badge badge-blue">CCF-B</span>
-              <span class="badge">LLM</span>
-              <span class="badge">Symbolic AI</span>
-              <span class="badge">RAG</span>
+            <div class="hero-slide">
+                <div class="hero-inner">
+                    <span class="badge-tier">NeurIPS 2026 · CCF-A · Under Review</span>
+                    <h2>Tokenization is Mechanism<br />Information-Asymmetric Token Merging for Biological Sequences</h2>
+                    <div class="meta"><i class="fa fa-calendar-alt"></i> 2026 &nbsp;·&nbsp; <i class="fa fa-folder"></i> AI4Science · First Author</div>
+                </div>
             </div>
-          </div>
-        </div>
-
-        <div class="pub-item">
-          <div class="pub-venue review">ICIC 2026</div>
-          <div class="pub-content">
-            <h3 class="pub-title" data-en="MLLM-based Image Forgery Detection and Localization" data-cn="基于多模态大语言模型的图像伪造检测与定位">MLLM-based Image Forgery Detection and Localization</h3>
-            <p class="pub-authors"><strong>Zihao (First Author)</strong></p>
-            <p class="pub-desc" data-en="LoRA fine-tuning of 13B vision-language model for unified detection-localization-explanation image tampering framework. Extension of PRCV work into image forgery detection domain." data-cn="对 13B 视觉语言模型进行 LoRA 微调，构建检测-定位-解释三位一体的图像篡改识别框架。为 PRCV 论文的延伸深挖。">
-              LoRA fine-tuning of 13B vision-language model for unified detection-localization-explanation image tampering framework. Extension of PRCV work into image forgery detection domain.
-            </p>
-            <div class="pub-tags">
-              <span class="badge badge-yellow" data-en="Under Review" data-cn="在投">Under Review</span>
-              <span class="badge">CCF-C</span>
-              <span class="badge">MLLM</span>
-              <span class="badge">LoRA</span>
-              <span class="badge">Forgery Detection</span>
+            <div class="hero-slide">
+                <div class="hero-inner">
+                    <span class="badge-tier">ICIC 2026 · Oral · Accepted</span>
+                    <h2>ProtoGene<br />Bridging the RT-Gap in Single-Cell Foundation Models<br />via Biology-Aware Prototypical Fine-Tuning</h2>
+                    <div class="meta"><i class="fa fa-calendar-alt"></i> 2026 &nbsp;·&nbsp; <i class="fa fa-folder"></i> Single-cell · First Author</div>
+                </div>
             </div>
-          </div>
-        </div>
-
-        <div class="pub-item">
-          <div class="pub-venue review">IJCNN 2026</div>
-          <div class="pub-content">
-            <h3 class="pub-title" data-en="LLM Reasoning and Evaluation" data-cn="大语言模型推理与评估">LLM Reasoning and Evaluation</h3>
-            <p class="pub-authors"><strong>Zihao (First Author)</strong></p>
-            <p class="pub-desc" data-en="Research on LLM reasoning capabilities and evaluation methodologies." data-cn="聚焦大语言模型推理能力与评估方法的研究。">
-              Research on LLM reasoning capabilities and evaluation methodologies.
-            </p>
-            <div class="pub-tags">
-              <span class="badge badge-yellow" data-en="Under Review" data-cn="在投">Under Review</span>
-              <span class="badge">CCF-C</span>
-              <span class="badge">LLM</span>
-              <span class="badge">Evaluation</span>
+            <div class="hero-slide">
+                <div class="hero-inner">
+                    <span class="badge-tier">iGEM 2025 · Gold Medal · Paris</span>
+                    <h2>AMP Forge<br />A De-Novo Antimicrobial Peptide Generation Platform</h2>
+                    <div class="meta"><i class="fa fa-calendar-alt"></i> 2025 &nbsp;·&nbsp; <i class="fa fa-folder"></i> Dry-Lab Lead</div>
+                </div>
             </div>
-          </div>
+            <div class="carousel-dots">
+                <button class="active" aria-label="Slide 1"></button>
+                <button aria-label="Slide 2"></button>
+                <button aria-label="Slide 3"></button>
+                <button aria-label="Slide 4"></button>
+            </div>
         </div>
 
-      </div>
-    </div>
-  </section>
+        <!-- About / Open to opportunities -->
+        <section class="block" id="about">
+            <h2>🎓 About Me</h2>
+            <div class="callout">
+                <p style="margin:0;">
+                    I am an undergraduate researcher at <strong>Jiangnan University</strong> (Project 211 &amp; Double First-Class).
+                    My work centres on <strong>AI for Science</strong>—especially <em>biological sequence modelling</em>,
+                    <em>single-cell foundation models</em>, <em>protein/peptide design</em>, and
+                    <em>large-language-model reasoning</em>.
+                </p>
+                <p style="margin:10px 0 0;">
+                    I have authored or co-authored
+                    <strong>7 papers</strong>
+                    (6 as first / co-first author, 6 accepted),
+                    co-spanning <em>NeurIPS</em>, <em>ICML</em>, <em>PRCV</em>, and <em>ICIC</em>,
+                    filed <strong>1 invention patent</strong>,
+                    and won <strong>Gold at iGEM 2025</strong> as the dry-lab lead.
+                </p>
+                <p style="margin:10px 0 0;">
+                    <strong>I am actively seeking research opportunities</strong> (RA, summer internship, or graduate study)
+                    in AI for Life Sciences. Please feel free to reach out.
+                </p>
+            </div>
 
-  <!-- Projects -->
-  <section class="section section-alt" id="projects">
-    <div class="container">
-      <h2 class="section-title" data-en="Featured Projects" data-cn="代表性项目">Featured Projects</h2>
-      <div class="project-grid">
+            <h2 style="margin-top:42px;">🌟 Research Vision</h2>
+            <p style="text-align:justify; font-size:1.05rem;">
+                Biology speaks in sequences; AI is learning to listen.
+                I am driven by two complementary pursuits:
+            </p>
+            <ul style="font-size:1.05rem;">
+                <li><strong>Decoding biological sequences.</strong>
+                    Designing information-theoretic, interpretable foundation models for proteins, peptides,
+                    single-cell transcriptomes and beyond.</li>
+                <li><strong>Reasoning machines for science.</strong>
+                    Building LLM-driven agents that fuse symbolic reasoning with deep representation learning
+                    to solve concrete scientific design problems.</li>
+            </ul>
+            <p class="quote">
+                "We must know — we will know."
+                <span class="author">— David Hilbert</span>
+            </p>
+        </section>
 
-        <div class="project-card highlight">
-          <div class="project-medal">GOLD</div>
-          <h3>AMP Forge</h3>
-          <p class="project-subtitle" data-en="iGEM 2025 · Dry-lab Lead · Paris, France" data-cn="iGEM 2025 · 干实验负责人 · 法国巴黎">iGEM 2025 · Dry-lab Lead · Paris, France</p>
-          <p class="project-desc" data-en="Antimicrobial peptide de novo design platform fusing protein language models (ESM-2 / ProtT5 / Ankh) with generative AI. Transformer-VAE + Latent Diffusion architecture supporting 6 conditional generation modes for precise AMP variant control." data-cn="融合蛋白质语言模型（ESM-2 / ProtT5 / Ankh）与生成式 AI 的抗菌肽从头设计平台。Transformer-VAE + Latent Diffusion 架构，支持 6 种条件生成模式。">
-            Antimicrobial peptide de novo design platform fusing protein language models (ESM-2 / ProtT5 / Ankh) with generative AI. Transformer-VAE + Latent Diffusion architecture supporting 6 conditional generation modes for precise AMP variant control.
-          </p>
-          <div class="project-tags">
-            <span>PyTorch</span><span>Diffusion Models</span><span>PLM</span><span>React</span>
-          </div>
+        <!-- News -->
+        <section class="block" id="news">
+            <h2>📰 News</h2>
+            <ul class="news-list">
+                <li>
+                    <span class="date">2026</span>
+                    <span><strong>RA-Det</strong> (5th author) accepted to <strong>ICML 2026</strong> (CCF-A).
+                    <span class="new-tag">NEW</span></span>
+                </li>
+                <li>
+                    <span class="date">2026</span>
+                    <span><strong>Tokenization is Mechanism</strong> submitted to <strong>NeurIPS 2026</strong> (CCF-A) as first author.</span>
+                </li>
+                <li>
+                    <span class="date">2026</span>
+                    <span>Four first-author papers accepted as <strong>Orals at ICIC 2026</strong>:
+                    ProtoGene · Extract-Then-Compile · Alignment-Adaptive Fusion · FWMamba-UNet.</span>
+                </li>
+                <li>
+                    <span class="date">2025-11</span>
+                    <span><strong>iGEM 2025 Gold Medal</strong> awarded in Paris; presented as dry-lab lead.</span>
+                </li>
+                <li>
+                    <span class="date">2025</span>
+                    <span><strong>MambaGuard</strong> (co-first author) accepted to <strong>PRCV 2025</strong> (CCF-C).</span>
+                </li>
+                <li>
+                    <span class="date">2025</span>
+                    <span>Invention patent filed: <em>"A Neuro-Symbolic Method &amp; Apparatus for Language-Driven Travel Planning."</em></span>
+                </li>
+                <li>
+                    <span class="date">2025</span>
+                    <span>Awarded <strong>Outstanding Student Cadre of Wuxi City</strong>.</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Education -->
+        <section class="block" id="education">
+            <h2>🏫 Education</h2>
+            <div class="callout">
+                <h3 style="margin:0;">Jiangnan University &nbsp;<span style="font-size:0.8rem; color:var(--muted); font-weight:400;">(Project 211 · Double First-Class)</span></h3>
+                <p style="margin:6px 0 0;">B.Eng. in Digital Media Technology, School of AI &amp; Computer Science</p>
+                <p style="margin:6px 0 0; color:var(--muted); font-size:0.9rem;">Sep 2023 — Jun 2027 &nbsp;|&nbsp; GPA: <strong>88 / 100</strong></p>
+                <p style="margin:10px 0 0;">
+                    Honours: <em>Jiangnan University Honor Student (至善生)</em>,
+                    <em>1st-class Comprehensive Scholarship</em>,
+                    <em>Outstanding Student Cadre (校级)</em>,
+                    <em>Outstanding Student Cadre of Wuxi City (市级)</em>.
+                </p>
+            </div>
+        </section>
+
+        <!-- Publications -->
+        <section class="block" id="publications">
+            <h2>📄 Publications</h2>
+            <p style="text-align:center; color:var(--muted); margin-top:-14px; margin-bottom:24px;">
+                <sup>1</sup> denotes first author · * denotes co-first author
+            </p>
+
+            <div class="pub-item">
+                <div class="pub-num">1</div>
+                <div>
+                    <div class="pub-title">Tokenization is Mechanism: Information-Asymmetric Token Merging for Biological Sequences</div>
+                    <div class="pub-authors"><span class="me">Zihao Guo<sup>1</sup></span>, et al.</div>
+                    <div class="pub-meta">
+                        <span class="tag tag-a">NeurIPS 2026 · CCF-A</span>
+                        <span class="tag tag-status-submit">Under Review</span>
+                        <span class="tag tag-role">First Author</span>
+                    </div>
+                    <p style="margin:6px 0 0; font-size:0.9rem; color:#444;">
+                        pMHC binding prediction · information-theoretic token merging · interpretable mechanism ·
+                        cross-domain biological sequence modelling (pMHC / TCR / DNA / SMILES).
+                    </p>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-num">2</div>
+                <div>
+                    <div class="pub-title">ProtoGene: Bridging the RT-Gap in Single-Cell Foundation Models via Biology-Aware Prototypical Fine-Tuning</div>
+                    <div class="pub-authors"><span class="me">Zihao Guo<sup>1</sup></span>, et al.</div>
+                    <div class="pub-meta">
+                        <span class="tag tag-c">ICIC 2026 · CCF-C · Oral</span>
+                        <span class="tag tag-status-accept">Accepted</span>
+                        <span class="tag tag-role">First Author</span>
+                    </div>
+                    <p style="margin:6px 0 0; font-size:0.9rem; color:#444;">
+                        Single-cell foundation model · prototypical contrastive fine-tuning · generalisation across sequencing protocols.
+                    </p>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-num">3</div>
+                <div>
+                    <div class="pub-title">Extract Then Compile: Reliable Neuro-Symbolic Planning for Large Language Models</div>
+                    <div class="pub-authors"><span class="me">Zihao Guo<sup>1</sup></span>, et al.</div>
+                    <div class="pub-meta">
+                        <span class="tag tag-c">ICIC 2026 · CCF-C · Oral</span>
+                        <span class="tag tag-status-accept">Accepted</span>
+                        <span class="tag tag-role">First Author</span>
+                    </div>
+                    <p style="margin:6px 0 0; font-size:0.9rem; color:#444;">
+                        LLM agent · neuro-symbolic reasoning · constraint-satisfaction planning &amp; solving.
+                    </p>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-num">4</div>
+                <div>
+                    <div class="pub-title">Fusion Direction Matters: Alignment-Adaptive Cross-Modal Fusion for Medical Image Segmentation</div>
+                    <div class="pub-authors"><span class="me">Zihao Guo<sup>1</sup></span>, et al.</div>
+                    <div class="pub-meta">
+                        <span class="tag tag-c">ICIC 2026 · CCF-C · Oral</span>
+                        <span class="tag tag-status-accept">Accepted</span>
+                        <span class="tag tag-role">First Author</span>
+                    </div>
+                    <p style="margin:6px 0 0; font-size:0.9rem; color:#444;">
+                        Vision-language model · multimodal fusion · medical image segmentation.
+                    </p>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-num">5</div>
+                <div>
+                    <div class="pub-title">FWMamba-UNet: Frequency-Wavelet Enhanced Mamba UNet for Medical Image Segmentation</div>
+                    <div class="pub-authors"><span class="me">Zihao Guo<sup>1</sup></span>, et al.</div>
+                    <div class="pub-meta">
+                        <span class="tag tag-c">ICIC 2026 · CCF-C · Oral</span>
+                        <span class="tag tag-status-accept">Accepted</span>
+                        <span class="tag tag-role">First Author</span>
+                    </div>
+                    <p style="margin:6px 0 0; font-size:0.9rem; color:#444;">
+                        Mamba / state-space model · wavelet transform · medical image segmentation.
+                    </p>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-num">6</div>
+                <div>
+                    <div class="pub-title">MambaGuard: A CLIP-Mamba Approach for OOD Generated Image Detection</div>
+                    <div class="pub-authors">Xinchang Wang*, Yuechen Zhang*, <span class="me">Zihao Guo*</span>, et al.</div>
+                    <div class="pub-meta">
+                        <span class="tag tag-c">PRCV 2025 · CCF-C</span>
+                        <span class="tag tag-status-accept">Accepted</span>
+                        <span class="tag tag-role">Co-First Author</span>
+                    </div>
+                    <p style="margin:6px 0 0; font-size:0.9rem; color:#444;">
+                        AI-generated image detection · vision-language model · Mamba.
+                    </p>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-num">7</div>
+                <div>
+                    <div class="pub-title">RA-Det: Towards Universal Detection of AI-Generated Images via Robustness Asymmetry</div>
+                    <div class="pub-authors">Xinchang Wang, Yunhao Chen, Yuechen Zhang, Congcong Bian, <span class="me">Zihao Guo</span>, et al.</div>
+                    <div class="pub-meta">
+                        <span class="tag tag-a">ICML 2026 · CCF-A</span>
+                        <span class="tag tag-status-accept">Accepted</span>
+                        <span class="tag tag-role">5th Author</span>
+                    </div>
+                    <p style="margin:6px 0 0; font-size:0.9rem; color:#444;">
+                        Universal detection of AI-generated images via robustness-asymmetry.
+                    </p>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-num"><i class="fas fa-file-contract"></i></div>
+                <div>
+                    <div class="pub-title">Patent — A Neuro-Symbolic Method &amp; Apparatus for Language-Driven Travel Planning</div>
+                    <div class="pub-authors">Chinese Invention Patent (Filed)</div>
+                    <div class="pub-meta">
+                        <span class="tag tag-status-submit">Filed</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="block" id="projects">
+            <h2>🧪 Featured Projects</h2>
+            <div class="proj-grid">
+
+                <div class="proj-card">
+                    <div class="role">First Author · ICIC 2026 Oral</div>
+                    <h3>FWMamba-UNet — Frequency-Wavelet Enhanced Mamba UNet</h3>
+                    <p>
+                        A medical image segmentation network that augments the Mamba state-space backbone with
+                        <strong>frequency-domain</strong> and <strong>wavelet-transform</strong> branches. The frequency-wavelet
+                        enhancement captures cross-scale boundary cues that pure spatial-domain UNets miss, yielding
+                        consistent Dice / HD<sub>95</sub> gains across multi-organ and pathology datasets while keeping the
+                        linear-time complexity of Mamba.
+                    </p>
+                    <div class="stack">
+                        <span>Mamba / SSM</span><span>Wavelet</span><span>FFT</span><span>UNet</span>
+                        <span>Medical Imaging</span><span>PyTorch</span>
+                    </div>
+                </div>
+
+                <div class="proj-card">
+                    <div class="role">iGEM 2025 · Gold Medal · Dry-Lab Lead</div>
+                    <h3>AMP Forge — Antimicrobial Peptide De-Novo Design</h3>
+                    <p>
+                        A general AMP design platform tackling antibiotic resistance via the human peptide
+                        <strong>LL-37</strong> expressed in <em>S. cerevisiae</em>. Built the largest curated AMP corpus and
+                        a three-stage pipeline: <strong>ESM-2 / ProtT5 / Ankh + BiGRU-VAE latent space →
+                        Latent Diffusion → Transformer decoder</strong>, trained MLE → RL adversarial → diffusion fine-tuning.
+                        Supports six generation modes and achieves <strong>SOTA</strong> on multiple metrics; generated
+                        variants outperformed the wild type in wet-lab assays.
+                    </p>
+                    <div class="stack">
+                        <span>PyTorch</span><span>ESM-2</span><span>ProtT5</span><span>Ankh</span>
+                        <span>Latent Diffusion</span><span>BiGRU-VAE</span><span>RLHF</span>
+                    </div>
+                </div>
+
+                <div class="proj-card">
+                    <div class="role">First Author · ICIC 2026 Oral</div>
+                    <h3>ProtoGene — Single-Cell Foundation Model Fine-Tuning</h3>
+                    <p>
+                        A biology-aware prototypical fine-tuning framework that closes the
+                        <em>read-technology gap</em> between scRNA-seq protocols, improving the generalisation of
+                        pretrained single-cell foundation models on unseen datasets.
+                    </p>
+                    <div class="stack">
+                        <span>scGPT</span><span>Geneformer</span><span>Contrastive</span><span>PyTorch</span>
+                    </div>
+                </div>
+
+                <div class="proj-card">
+                    <div class="role">First Author · NeurIPS 2026 (Under Review)</div>
+                    <h3>Tokenization-as-Mechanism</h3>
+                    <p>
+                        Information-asymmetric token merging that turns the tokenizer itself into an interpretable
+                        mechanism for biological sequence learning. Tested across <strong>pMHC, TCR, DNA, and SMILES</strong>
+                        with consistent gains and interpretable merging trees.
+                    </p>
+                    <div class="stack">
+                        <span>Information Theory</span><span>pMHC</span><span>TCR</span><span>DNA</span><span>SMILES</span>
+                    </div>
+                </div>
+
+                <div class="proj-card">
+                    <div class="role">First Author · ICIC 2026 Oral</div>
+                    <h3>SHINE — Neuro-Symbolic Travel Planner</h3>
+                    <p>
+                        Extract-Then-Compile: an LLM agent that lifts natural-language constraints into a symbolic
+                        program, then solves it reliably via classical search. Achieves a strong pass-rate on the
+                        ChinaTravel benchmark and ships as a filed invention patent.
+                    </p>
+                    <div class="stack">
+                        <span>LLM Agent</span><span>Neuro-Symbolic</span><span>Constraint Solving</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="block" id="contact">
+            <h2>📬 Contact</h2>
+            <div style="text-align:center;">
+                <p><i class="fas fa-envelope" style="color:var(--primary)"></i> &nbsp;
+                    <a href="mailto:1191230418@jiangnan.edu.cn">1191230418@jiangnan.edu.cn</a>
+                </p>
+                <p><i class="fas fa-phone" style="color:var(--primary)"></i> &nbsp; +86 176-1462-8870</p>
+                <p><i class="fas fa-map-marker-alt" style="color:var(--primary)"></i> &nbsp; Wuxi, Jiangsu, China</p>
+                <p style="margin-top:18px;">
+                    <a href="https://github.com/unumbrela" target="_blank" rel="noopener" class="social-icons" style="display:inline-flex;"><span style="display:inline-flex; padding:8px 16px; border:1px solid var(--border); border-radius:20px; gap:6px; align-items:center;"><i class="fab fa-github"></i> github.com/unumbrela</span></a>
+                </p>
+                <p class="quote" style="margin-top:30px;">
+                    I am open to RA / internship / graduate-study collaborations in AI for Life Sciences.
+                </p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <div class="footer">
+            &copy; <span id="year">2026</span> <a href="#hero">Zihao Guo</a> · Built with care · Last updated May 2026
         </div>
 
-        <div class="project-card">
-          <h3>Boltz-Universal</h3>
-          <p class="project-subtitle" data-en="Universal Biomolecular Rational Design" data-cn="通用生物分子理性设计系统">Universal Biomolecular Rational Design</p>
-          <p class="project-desc" data-en="End-to-end protein-ligand complex design system based on Boltz-1, covering small molecules, peptides, and DNA/RNA aptamers. Integrated LigandMPNN + PyRosetta with multi-objective loss, optimizing pLDDT from 0.55 to 0.75+." data-cn="基于 Boltz-1 的端到端蛋白质-配体复合物设计系统，覆盖小分子药物、多肽及 DNA/RNA 适配体。整合 LigandMPNN + PyRosetta，pLDDT 从 0.55 优化至 0.75+。">
-            End-to-end protein-ligand complex design system based on Boltz-1, covering small molecules, peptides, and DNA/RNA aptamers. Integrated LigandMPNN + PyRosetta with multi-objective loss, optimizing pLDDT from 0.55 to 0.75+.
-          </p>
-          <div class="project-tags">
-            <span>Boltz-1</span><span>LigandMPNN</span><span>PyRosetta</span>
-          </div>
-        </div>
+    </main>
+</div>
 
-        <div class="project-card">
-          <h3>Evo2 Fine-tuning</h3>
-          <p class="project-subtitle" data-en="Genomic Language Model Adaptation" data-cn="基因组语言模型领域自适应微调">Genomic Language Model Adaptation</p>
-          <p class="project-desc" data-en="Domain-adaptive fine-tuning of Evo2-1B genomic foundation model on NVIDIA BioNeMo Framework. Full pipeline from iGEM Registry & OpenGenome2 data acquisition through Megatron-LM distributed preprocessing to LoRA fine-tuning and inference." data-cn="基于 BioNeMo 框架对 Evo2-1B 基因组基础模型进行领域自适应微调。完整 Pipeline 覆盖数据获取、Megatron-LM 分布式预处理、LoRA 微调及推理。">
-            Domain-adaptive fine-tuning of Evo2-1B genomic foundation model on NVIDIA BioNeMo Framework. Full pipeline from iGEM Registry & OpenGenome2 data acquisition through Megatron-LM distributed preprocessing to LoRA fine-tuning and inference.
-          </p>
-          <div class="project-tags">
-            <span>BioNeMo</span><span>Megatron-LM</span><span>LoRA</span>
-          </div>
-        </div>
+<a href="#hero" class="back-top" id="backTop" aria-label="Back to top"><i class="fas fa-angle-double-up"></i></a>
 
-        <div class="project-card">
-          <h3>SHINE System</h3>
-          <p class="project-subtitle" data-en="Neuro-Symbolic Travel Planning" data-cn="神经-符号混合智能旅行规划">Neuro-Symbolic Travel Planning</p>
-          <p class="project-desc" data-en="Hybrid architecture combining LLM natural language understanding with symbolic reasoning. Deterministic NL2SL constraint translation pipeline with RAG, JSONSchema validation, and constraint-aware DFS algorithm. 77.27% pass rate on ChinaTravel." data-cn="LLM 自然语言理解与符号推理结合的混合架构。确定性 NL2SL 约束翻译流水线，集成 RAG、JSONSchema 验证与约束感知 DFS 算法。ChinaTravel 基准 77.27% 通过率。">
-            Hybrid architecture combining LLM natural language understanding with symbolic reasoning. Deterministic NL2SL constraint translation pipeline with RAG, JSONSchema validation, and constraint-aware DFS algorithm. 77.27% pass rate on ChinaTravel.
-          </p>
-          <div class="project-tags">
-            <span>LLM</span><span>RAG</span><span>Symbolic AI</span><span>DFS</span>
-          </div>
-        </div>
+<script>
+    // Simple carousel
+    (function() {
+        const slides = document.querySelectorAll('.hero-slide');
+        const dots = document.querySelectorAll('.carousel-dots button');
+        let idx = 0;
+        const total = slides.length;
+        function show(i) {
+            slides.forEach((s, k) => s.classList.toggle('active', k === i));
+            dots.forEach((d, k) => d.classList.toggle('active', k === i));
+            idx = i;
+        }
+        dots.forEach((d, k) => d.addEventListener('click', () => show(k)));
+        setInterval(() => show((idx + 1) % total), 5500);
+    })();
 
-      </div>
-    </div>
-  </section>
+    // Back to top
+    const bt = document.getElementById('backTop');
+    window.addEventListener('scroll', () => {
+        bt.classList.toggle('visible', window.scrollY > 320);
+    });
 
-  <!-- Awards -->
-  <section class="section" id="awards">
-    <div class="container">
-      <h2 class="section-title" data-en="Awards & Honors" data-cn="竞赛与荣誉">Awards & Honors</h2>
-      <div class="awards-list">
-        <div class="award-item">
-          <div class="award-year">2025</div>
-          <div class="award-content">
-            <h3 data-en="iGEM International Gold Medal" data-cn="iGEM 国际基因工程机器大赛金牌">iGEM International Gold Medal</h3>
-            <p data-en="International Genetically Engineered Machine Competition · Paris, France" data-cn="代表江南大学赴法国巴黎线下答辩">International Genetically Engineered Machine Competition · Paris, France</p>
-          </div>
-        </div>
-        <div class="award-item">
-          <div class="award-year">2024</div>
-          <div class="award-content">
-            <h3 data-en="Zhishan Honors Student" data-cn="江南大学荣誉至善生">Zhishan Honors Student</h3>
-            <p data-en="Jiangnan University · Top academic honor" data-cn="江南大学校级荣誉称号">Jiangnan University · Top academic honor</p>
-          </div>
-        </div>
-        <div class="award-item">
-          <div class="award-year">2024</div>
-          <div class="award-content">
-            <h3 data-en="CPC Probationary Member" data-cn="中共预备党员">CPC Probationary Member</h3>
-            <p data-en="Communist Party of China" data-cn="中国共产党">Communist Party of China</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section class="section section-alt" id="contact">
-    <div class="container">
-      <h2 class="section-title" data-en="Contact" data-cn="联系方式">Contact</h2>
-      <div class="contact-grid">
-        <a href="mailto:zihao3351@gmail.com" class="contact-card">
-          <div class="contact-icon">@</div>
-          <div>
-            <h3>Email</h3>
-            <p>zihao3351@gmail.com</p>
-          </div>
-        </a>
-        <a href="https://github.com/unumbrela" class="contact-card">
-          <div class="contact-icon">&lt;/&gt;</div>
-          <div>
-            <h3>GitHub</h3>
-            <p>@unumbrela</p>
-          </div>
-        </a>
-        <a href="https://scholar.google.com/" class="contact-card">
-          <div class="contact-icon">G</div>
-          <div>
-            <h3>Google Scholar</h3>
-            <p data-en="Publications" data-cn="学术论文">Publications</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 Zihao. <span data-en="Built with curiosity and code." data-cn="以好奇心与代码构建。">Built with curiosity and code.</span></p>
-  </footer>
-
-  <!-- Scroll to top -->
-  <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">&uarr;</button>
-
-  <script src="assets/js/main.js"></script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
