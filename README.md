@@ -35,4 +35,4 @@ Framework images retain their actual aspect ratios. The figure dialog offers ori
 
 The GitHub profile banner uses the same serif typography and palette, and both the banner and the prominent text link open the canonical GitHub Pages website. GitHub controls README body fonts; custom typography is limited to the SVG banner there.
 
-The compact sidebar lists Undergraduate · JNU and incoming PhD · USTC · AIDS (September 2027). Education and Beyond research are omitted from the main content; navigation follows the remaining sections.
+The sidebar uses matching degree, full university name, and status rows for undergraduate studies at Jiangnan University and incoming PhD studies at the University of Science and Technology of China (AIDS, September 2027). Education and Beyond research are omitted from the main content; navigation follows the remaining sections.
