@@ -25,10 +25,12 @@ The layout was inspired by the reference academic homepage; this implementation 
 
 ## Visual direction
 
-White and warm charcoal surfaces with orange accents, a fixed profile column on desktop, compact introductory prose, and publications grouped by research area. The existing portrait, framework figures, bilingual content, and academic claims are retained from the working copy. Figures open in an accessible dialog (Escape, close button, or backdrop to dismiss). A reduced-motion preference disables animated scrolling.
+Claude-inspired warm ivory paper, terracotta accents, and warm charcoal dark mode. Georgia serif headings (Songti/SimSun fallbacks for Chinese) pair with Segoe UI/system sans-serif body text. Fonts are local system stacks without external font requests. A fixed profile column, spacious introductory prose, and publications grouped by research area preserve the academic structure. The existing portrait, framework figures, bilingual content, and academic claims are retained from the working copy. Figures open in an accessible dialog (Escape, close button, or backdrop to dismiss). A reduced-motion preference disables animated scrolling.
 
 Reference: [Orange’s academic homepage](https://orangecc7.github.io/) and [profile README](https://github.com/orangecc7/orangecc7). Layout and visual hierarchy are adapted; source, illustrations, and personal content are authored for Zihao. Existing `#about` / `#publications` links still work, with `#about-me` / `#research` aliases.
 
 GitHub profile content lives in the sibling repository’s `README.md` and `README_CN.md`; its two `profile-header-*.svg` files provide light/dark headers. Keep the profile’s links pointing to the canonical Pages site.
 
 Framework images retain their actual aspect ratios. The figure dialog offers original CSS-pixel dimensions and a direct source-image link. Contacts use native clipboard access with a visible manual-copy fallback; update the button data attributes and titles together.
+
+The GitHub profile banner uses the same serif typography and palette, and both the banner and the prominent text link open the canonical GitHub Pages website. GitHub controls README body fonts; custom typography is limited to the SVG banner there.
