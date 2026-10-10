@@ -4,7 +4,7 @@ A build-free, bilingual academic homepage for GitHub Pages. English is the defau
 
 ## Maintain
 
-- `index.html`: profile, news, publications, projects, and education. Update the adjacent `.en` and `.zh` content together.
+- `index.html`: profile, news, publications, projects, and research directions. Update the adjacent `.en` and `.zh` content together.
 - `assets/css/style.css`: responsive layout and light/dark color variables.
 - `assets/js/preferences.js`: apply language/theme before first paint.
 - `assets/js/main.js`: language/theme controls, active section navigation, and keyboard-accessible figure dialogs.
@@ -34,3 +34,5 @@ GitHub profile content lives in the sibling repository’s `README.md` and `READ
 Framework images retain their actual aspect ratios. The figure dialog offers original CSS-pixel dimensions and a direct source-image link. Contacts use native clipboard access with a visible manual-copy fallback; update the button data attributes and titles together.
 
 The GitHub profile banner uses the same serif typography and palette, and both the banner and the prominent text link open the canonical GitHub Pages website. GitHub controls README body fonts; custom typography is limited to the SVG banner there.
+
+The compact sidebar lists Undergraduate · JNU and incoming PhD · USTC · AIDS (September 2027). Education and Beyond research are omitted from the main content; navigation follows the remaining sections.
